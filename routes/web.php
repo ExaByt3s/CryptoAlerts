@@ -15,7 +15,17 @@
 Route::view('/', 'welcome');
 Route::view('contact', 'contact');
 Route::view('about', 'about');
-
+Route::get('activity', function() {
+    $activity = [
+        'a',
+        'b',
+        'c',
+        'd'
+    ];
+    return view('internals.activity', [
+        'activity' => $activity
+    ]);
+});
 //Route::get('/', function () {
 //    return view('welcome');
 //});
