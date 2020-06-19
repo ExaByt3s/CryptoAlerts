@@ -16,6 +16,7 @@ Route::view('/', 'welcome');
 Route::view('contact', 'contact');
 Route::view('about', 'about');
 Route::get('activity', 'ActivityController@get_activity');
+
 //Route::get('/', function () {
 //    return view('welcome');
 //});
